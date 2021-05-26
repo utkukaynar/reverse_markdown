@@ -30,7 +30,7 @@ module ReverseMarkdown
       end
 
       def language_from_highlight_class(node)
-        node.['class'].to_s[/lang-([a-zA-Z0-9]+)/, 1]
+        node['class'].to_s[/lang-([a-zA-Z0-9]+)/, 1]
       end
 
       def language_from_confluence_class(node)
